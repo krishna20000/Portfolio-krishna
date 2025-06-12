@@ -112,7 +112,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '3',
     title: 'YouTube Clone',
     description: 'A clone of the popular video-sharing platform, implementing core features like video playback and search.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://portfolio-kdm.vercel.app/yt.png',
     imageAiHint: 'video platform',
     liveDemoUrl: '#',
     category: 'Clone'
