@@ -8,7 +8,7 @@ import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
   title: 'KDM Portfolio - Krishna Dharmendra Mehta',
-  description: 'Personal portfolio of Krishna Dharmendra Mehta, a frontend developer.',
+  description: 'Personal portfolio of Krishna Dharmendra Mehta, a MERN stack developer.',
 };
 
 export default function RootLayout({

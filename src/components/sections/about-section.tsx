@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
@@ -33,7 +34,7 @@ export function AboutSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  I am a dedicated and enthusiastic frontend developer with a strong foundation in modern web technologies. My journey in tech is driven by a desire to solve complex problems and create intuitive, user-friendly interfaces.
+                  I am a dedicated and enthusiastic MERN stack developer with a strong foundation in modern web technologies. My journey in tech is driven by a desire to solve complex problems and create intuitive, user-friendly interfaces.
                 </p>
                 <ul className="space-y-2">
                   {PROFILE_DETAILS.about.map((item, index) => (

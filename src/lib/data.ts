@@ -4,7 +4,7 @@ import { Atom, Briefcase, Code, Cpu, Database, GitBranch, Github, GraduationCap,
 
 export const PROFILE_DETAILS: ProfileDetails = {
   name: 'Krishna Dharmendra Mehta',
-  title: 'Frontend Developer',
+  title: 'MERN Stack Developer',
   logoUrl: 'https://i.postimg.cc/656dTRxh/circle-transparent.png',
   resumeUrl: 'https://drive.google.com/file/d/1SPE9VhQ9E_IJ62lA3Gjy1vDJeJIzdsaU/view?usp=sharing',
   linkedinUrl: 'https://www.linkedin.com/in/kdmehta704/',
@@ -13,7 +13,7 @@ export const PROFILE_DETAILS: ProfileDetails = {
   email: 'developerkdm8@gmail.com',
   heroTexts: [
     "Hi, I'm Krishna Dharmendra Mehta",
-    "Frontend Developer",
+    "MERN Stack Developer",
     "React Enthusiast",
     "Problem Solver"
   ],
