@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -124,15 +125,64 @@ body {
   50% { border-color: hsl(var(--accent)) }
 }
 
+/* Refined Button Glow */
+@keyframes glowing {
+  0%, 100% {
+    box-shadow: 0 0 6px hsla(var(--accent), 0.7), 
+                0 0 12px hsla(var(--accent), 0.5),
+                0 0 18px hsla(var(--accent), 0.3);
+  }
+  50% {
+    box-shadow: 0 0 12px hsla(var(--accent), 1), 
+                0 0 24px hsla(var(--accent), 0.7), 
+                0 0 36px hsla(var(--accent), 0.5);
+  }
+}
 .glowing-btn {
-  animation: glowing 2s infinite;
+  animation: glowing 2.5s infinite ease-in-out;
 }
 
-@keyframes glowing {
-  0% { box-shadow: 0 0 5px hsl(var(--accent)), 0 0 10px hsl(var(--accent)); }
-  50% { box-shadow: 0 0 20px hsl(var(--accent)), 0 0 30px hsl(var(--accent)); }
-  100% { box-shadow: 0 0 5px hsl(var(--accent)), 0 0 10px hsl(var(--accent)); }
+/* Scroll-triggered Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+.animate-fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Card Hover Effect */
+.card-hover-effect {
+  @apply transition-all duration-300 ease-out;
+}
+.card-hover-effect:hover {
+  @apply shadow-xl -translate-y-1;
+}
+
 
 .section-min-height {
   min-height: calc(100vh - 80px - 80px); /* screen - navbar - footer */

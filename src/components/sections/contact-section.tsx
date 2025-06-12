@@ -13,6 +13,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Send, Loader2 } from "lucide-react";
 import { PROFILE_DETAILS } from "@/lib/data";
 import { useToast } from "@/hooks/use-toast";
+import { ScrollAnimationWrapper } from "@/components/scroll-animation-wrapper";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
@@ -75,13 +76,17 @@ export function ContactSection() {
     <section id="contact" className="section-min-height py-16 md:py-24">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
-          <p className="mt-4 text-muted-foreground md:text-xl">
-            I'd love to hear from you! Send me a message.
-          </p>
+          <ScrollAnimationWrapper>
+            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
+          </ScrollAnimationWrapper>
+          <ScrollAnimationWrapper animationDelay="100ms">
+            <p className="mt-4 text-muted-foreground md:text-xl">
+              I'd love to hear from you! Send me a message.
+            </p>
+          </ScrollAnimationWrapper>
         </div>
-        <div className="max-w-xl mx-auto">
-          <Card className="shadow-xl border-border">
+        <ScrollAnimationWrapper animationDelay="200ms" className="max-w-xl mx-auto">
+          <Card className="shadow-xl border-border card-hover-effect">
             <CardHeader>
               <CardTitle className="font-headline">Contact Me</CardTitle>
               <CardDescription>Fill out the form below to send me an email.</CardDescription>
@@ -142,7 +147,7 @@ export function ContactSection() {
               </Form>
             </CardContent>
           </Card>
-        </div>
+        </ScrollAnimationWrapper>
       </div>
     </section>
   );
