@@ -157,7 +157,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '8',
     title: 'Todos Website',
     description: 'A classic to-do list application for managing tasks with add, edit, and delete functionalities.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://portfolio-kdm.vercel.app/todo.png',
     imageAiHint: 'task manager',
     liveDemoUrl: '#',
     category: 'JavaScript'
