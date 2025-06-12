@@ -1,4 +1,4 @@
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/refine-hero-text.ts';
+// The import for refine-hero-text.ts has been removed as part of AI feature removal.
