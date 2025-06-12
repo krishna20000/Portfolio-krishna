@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Download, Send } from "lucide-react"; // Changed Eye to Send
+import { Download, Send } from "lucide-react";
 import { PROFILE_DETAILS } from "@/lib/data";
 import { Typewriter } from "@/components/ui/typewriter";
 import { ScrollAnimationWrapper } from "@/components/scroll-animation-wrapper";
@@ -10,14 +10,14 @@ export function HeroSection() {
   return (
     <section id="home" className="relative section-min-height flex items-center justify-center py-16 md:py-24 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
       <div className="container px-4 md:px-6">
-        <ScrollAnimationWrapper 
+        <ScrollAnimationWrapper
           animationClassName="animate-fadeInUp"
           className="flex flex-col items-center text-center"
         >
           <div className="space-y-6 lg:max-w-3xl">
-            <Typewriter 
-              texts={PROFILE_DETAILS.heroTexts} 
-              className="block font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary"
+            <Typewriter
+              texts={PROFILE_DETAILS.heroTexts}
+              className="inline-block font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary"
             />
             <p className="max-w-[600px] text-muted-foreground md:text-xl mx-auto">
               Passionate about crafting beautiful and performant web experiences.
