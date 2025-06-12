@@ -1,5 +1,5 @@
 
-import type { Skill, Education, Project, ProfileDetails } from './types';
+import type { Skill, Education, Project, ProfileDetails, WorkExperience } from './types';
 import { Atom, Briefcase, Code, Cpu, Database, GitBranch, Github, GraduationCap, Home, Layers, Mail, MessageSquare, Send, Server, Share2, ShoppingBag, User, Youtube } from 'lucide-react';
 
 export const PROFILE_DETAILS: ProfileDetails = {
@@ -72,12 +72,18 @@ export const EDUCATION_DATA: Education[] = [
   },
 ];
 
-export const WORK_EXPERIENCE_DATA = [
+export const WORK_EXPERIENCE_DATA: WorkExperience[] = [
   {
     title: 'Software Developer Trainee',
     company: 'AccioJob',
     period: 'Oct 2024 – Mar 2025',
     description: 'Intensive training program focusing on MERN stack development, Data Structures & Algorithms, and real-world project building. Gained hands-on experience in frontend and backend technologies.'
+  },
+  {
+    title: 'Junior Frontend Developer',
+    company: 'Devfrend Web Solutions',
+    period: 'Apr 2025 – Jun 2025',
+    description: 'Contributed to frontend development projects using modern web technologies. (Please update with specific responsibilities and achievements)'
   }
 ];
 
