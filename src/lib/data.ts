@@ -159,7 +159,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'A classic to-do list application for managing tasks with add, edit, and delete functionalities.',
     imageUrl: 'https://portfolio-kdm.vercel.app/todo.png',
     imageAiHint: 'task manager',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://todokdms.ccbp.tech/',
     category: 'JavaScript'
   },
   {
