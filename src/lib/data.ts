@@ -82,6 +82,7 @@ export const WORK_EXPERIENCE_DATA: WorkExperience[] = [
   {
     title: 'Junior Frontend Developer',
     company: 'Devfrend Web Solutions',
+    companyUrl: 'https://www.linkedin.com/company/devfrendcom/posts/?feedView=all',
     period: 'Apr 2025 – Jun 2025',
     description: 'Contributed to frontend development projects using modern web technologies. My work focused on creating and enhancing client websites, applying modern development techniques.'
   }
@@ -181,4 +182,3 @@ export const PROJECTS_DATA: Project[] = [
 ];
 
 export const PROJECT_CATEGORIES = ['All', ...Array.from(new Set(PROJECTS_DATA.map(p => p.category)))];
-

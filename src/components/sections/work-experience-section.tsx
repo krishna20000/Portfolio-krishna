@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Briefcase } from "lucide-react";
 import { WORK_EXPERIENCE_DATA } from "@/lib/data";
 import type { WorkExperience } from "@/lib/types";
+import Link from "next/link";
 
 // Helper function to parse the period string and get the start date
 const getStartDate = (period: string): Date => {
@@ -39,7 +40,13 @@ export function WorkExperienceSection() {
                   <Briefcase className="h-8 w-8 text-accent" />
                   <div>
                     <CardTitle className="font-headline text-xl">{exp.title}</CardTitle>
-                    <p className="text-md text-primary">{exp.company}</p>
+                    {exp.companyUrl ? (
+                      <Link href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-md text-primary hover:underline">
+                        {exp.company}
+                      </Link>
+                    ) : (
+                      <p className="text-md text-primary">{exp.company}</p>
+                    )}
                   </div>
                 </div>
                 <CardDescription>{exp.period}</CardDescription>

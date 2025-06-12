@@ -1,3 +1,4 @@
+
 import type { LucideIcon } from 'lucide-react';
 
 export interface ProfileDetails {
@@ -28,6 +29,7 @@ export interface Education {
 export interface WorkExperience {
   title: string;
   company: string;
+  companyUrl?: string;
   period: string;
   description: string;
 }
