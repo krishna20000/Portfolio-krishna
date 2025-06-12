@@ -109,8 +109,8 @@ body {
 }
 
 .typewriter-text {
-  overflow: hidden;
-  white-space: nowrap;
+  overflow: hidden; /* Ensures text doesn't wrap if container is too small */
+  white-space: nowrap; /* Keeps text on a single line */
   /* border-right-width and border-right-style are applied by Tailwind's border-r-2 on the span. */
   /* Initial border-right-color is applied by Tailwind's border-transparent on the span. */
   animation: blink-caret .75s step-end infinite;
@@ -186,7 +186,38 @@ body {
   @apply shadow-xl -translate-y-1;
 }
 
-
 .section-min-height {
   min-height: calc(100vh - 80px - 80px); /* screen - navbar - footer */
+}
+
+/* Falling Dots Animation */
+.falling-dot {
+  position: absolute;
+  top: -10px; /* Start just above the viewport */
+  width: 3px;
+  height: 3px;
+  background-color: hsl(var(--accent) / 0.5); /* Accent color with transparency */
+  border-radius: 50%;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0; /* Start transparent, animation fades it in */
+  will-change: transform, opacity; /* Optimize for animation */
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0vh);
+    opacity: 0;
+  }
+  10% { /* Fade in quickly */
+    opacity: 1;
+  }
+  90% { /* Stay visible for most of the fall */
+    opacity: 1;
+  }
+  100% { /* Fall off screen and fade out */
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }

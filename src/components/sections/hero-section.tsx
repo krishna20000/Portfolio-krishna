@@ -1,15 +1,48 @@
 
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Download, Send } from "lucide-react";
 import { PROFILE_DETAILS } from "@/lib/data";
 import { Typewriter } from "@/components/ui/typewriter";
 import { ScrollAnimationWrapper } from "@/components/scroll-animation-wrapper";
+import { useState, useEffect } from 'react';
+import type { CSSProperties } from 'react';
 
 export function HeroSection() {
+  const [dots, setDots] = useState<Array<{ id: number; style: CSSProperties }>>([]);
+
+  useEffect(() => {
+    const numDots = 20; // Number of dots
+    const generatedDots = Array.from({ length: numDots }).map((_, i) => ({
+      id: i,
+      style: {
+        left: `${Math.random() * 100}%`,
+        animationDuration: `${Math.random() * 5 + 5}s`, // Duration: 5s to 10s
+        animationDelay: `${Math.random() * 7}s`, // Delay: 0s to 7s
+        // Optional: Vary dot size slightly
+        // width: `${Math.floor(Math.random() * 2) + 2}px`, // 2px or 3px
+        // height: `${Math.floor(Math.random() * 2) + 2}px`,
+      } as CSSProperties,
+    }));
+    setDots(generatedDots);
+  }, []);
+
   return (
     <section id="home" className="relative section-min-height flex items-center justify-center py-16 md:py-24 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
-      <div className="container px-4 md:px-6">
+      {/* Container for falling dots */}
+      <div className="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
+        {dots.map(dot => (
+          <span
+            key={dot.id}
+            className="falling-dot"
+            style={dot.style}
+          />
+        ))}
+      </div>
+
+      <div className="container px-4 md:px-6 relative z-10"> {/* Ensure content is above dots */}
         <ScrollAnimationWrapper
           animationClassName="animate-fadeInUp"
           className="flex flex-col items-center text-center"
@@ -41,8 +74,8 @@ export function HeroSection() {
         </ScrollAnimationWrapper>
       </div>
       {/* Subtle decorative elements */}
-      <div className="absolute top-0 left-0 w-32 h-32 bg-accent/10 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-48 h-48 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-2000"></div>
+      <div className="absolute top-0 left-0 w-32 h-32 bg-accent/10 rounded-full filter blur-3xl opacity-50 animate-pulse z-0"></div>
+      <div className="absolute bottom-0 right-0 w-48 h-48 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-2000 z-0"></div>
     </section>
   );
 }
