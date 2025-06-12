@@ -168,7 +168,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'A UI clone of the Blinkit (formerly Grofers) application, focusing on frontend design and layout.',
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNOCmrNUfplxm1Kp_SsFSTgb_SLZzV4qeNSg&s',
     imageAiHint: 'ecommerce ui',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://boot-blink.vercel.app/',
     category: 'Clone'
   },
   {
@@ -183,3 +183,4 @@ export const PROJECTS_DATA: Project[] = [
 ];
 
 export const PROJECT_CATEGORIES = ['All', ...Array.from(new Set(PROJECTS_DATA.map(p => p.category)))];
+
