@@ -109,6 +109,15 @@ export const PROJECTS_DATA: Project[] = [
     category: 'React'
   },
   {
+    id: '5',
+    title: 'ReactHub (Mini Projects)',
+    description: 'A collection of small React projects demonstrating various concepts and techniques.',
+    imageUrl: 'https://portfolio-kdm.vercel.app/reacthub.png',
+    imageAiHint: 'react components',
+    liveDemoUrl: 'https://react-hub-delta.vercel.app/github-search',
+    category: 'React'
+  },
+  {
     id: '3',
     title: 'YouTube Clone',
     description: 'A clone of the popular video-sharing platform, implementing core features like video playback and search.',
@@ -125,15 +134,6 @@ export const PROJECTS_DATA: Project[] = [
     imageAiHint: 'spreadsheet app',
     liveDemoUrl: 'https://google-sheet-chi.vercel.app/',
     category: 'JavaScript'
-  },
-  {
-    id: '5',
-    title: 'ReactHub (Mini Projects)',
-    description: 'A collection of small React projects demonstrating various concepts and techniques.',
-    imageUrl: 'https://portfolio-kdm.vercel.app/reacthub.png',
-    imageAiHint: 'react components',
-    liveDemoUrl: 'https://react-hub-delta.vercel.app/github-search',
-    category: 'React'
   },
   {
     id: '6',
@@ -183,4 +183,3 @@ export const PROJECTS_DATA: Project[] = [
 ];
 
 export const PROJECT_CATEGORIES = ['All', ...Array.from(new Set(PROJECTS_DATA.map(p => p.category)))];
-
