@@ -132,7 +132,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'A collection of small React projects demonstrating various concepts and techniques.',
     imageUrl: 'https://portfolio-kdm.vercel.app/reacthub.png',
     imageAiHint: 'react components',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://react-hub-delta.vercel.app/github-search',
     category: 'React'
   },
   {
