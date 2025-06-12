@@ -177,7 +177,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'An interactive number guessing game built with JavaScript.',
     imageUrl: 'https://portfolio-kdm.vercel.app/guess.png',
     imageAiHint: 'number game',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://kdmguessgame.ccbp.tech/',
     category: 'JavaScript'
   },
 ];
