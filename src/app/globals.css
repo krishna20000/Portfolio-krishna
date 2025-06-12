@@ -111,31 +111,29 @@ body {
 .typewriter-text {
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-  animation-fill-mode: forwards; 
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  /* The JavaScript Typewriter component handles text reveal. CSS only handles caret. */
+  /* border-right-width and border-right-style are applied by Tailwind's border-r-2 on the span. */
+  /* Initial border-right-color is applied by Tailwind's border-transparent on the span. */
+  animation: blink-caret .75s step-end infinite;
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: hsl(var(--accent)) }
+  from, to { border-right-color: transparent }
+  50% { border-right-color: hsl(var(--accent)) }
 }
 
 /* Heartbeat Glow Effect */
 @keyframes glowing {
-  0%, 100% { /* Resting state - a noticeable but calm glow */
-    box-shadow: 0 0 5px hsla(var(--accent), 0.6),
-                0 0 10px hsla(var(--accent), 0.4),
-                0 0 2px 1px hsla(var(--accent), 0.5); /* Subtle inner spread */
+  0% { /* Resting state - very subtle or off */
+    box-shadow: 0 0 0px 0px hsla(var(--accent), 0);
   }
   50% { /* Pumping state - much more intense and larger with spread */
     box-shadow: 0 0 20px 5px hsla(var(--accent), 1),    /* Inner bright glow with spread */
                 0 0 40px 10px hsla(var(--accent), 0.7), /* Medium glow with more spread */
                 0 0 65px 15px hsla(var(--accent), 0.5); /* Outer soft glow with largest spread */
+  }
+  100% { /* Return to resting state */
+    box-shadow: 0 0 0px 0px hsla(var(--accent), 0);
   }
 }
 .glowing-btn {
@@ -187,4 +185,3 @@ body {
 .section-min-height {
   min-height: calc(100vh - 80px - 80px); /* screen - navbar - footer */
 }
-
