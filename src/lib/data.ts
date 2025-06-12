@@ -130,7 +130,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '5',
     title: 'ReactHub (Mini Projects)',
     description: 'A collection of small React projects demonstrating various concepts and techniques.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://portfolio-kdm.vercel.app/reacthub.png',
     imageAiHint: 'react components',
     liveDemoUrl: '#',
     category: 'React'
