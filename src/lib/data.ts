@@ -121,7 +121,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '4',
     title: 'Google Sheets Clone',
     description: 'A web-based spreadsheet application mimicking functionalities of Google Sheets.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://portfolio-kdm.vercel.app/sheets.png',
     imageAiHint: 'spreadsheet app',
     liveDemoUrl: '#',
     category: 'JavaScript'
