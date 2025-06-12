@@ -175,7 +175,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '10',
     title: 'Guess Number Game',
     description: 'An interactive number guessing game built with JavaScript.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://portfolio-kdm.vercel.app/guess.png',
     imageAiHint: 'number game',
     liveDemoUrl: '#',
     category: 'JavaScript'
