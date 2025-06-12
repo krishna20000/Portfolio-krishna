@@ -94,7 +94,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '1',
     title: 'Freelancing Platform (CodeCrafter)',
     description: 'A full-stack platform connecting freelancers with clients, featuring project posting, bidding, and user profiles.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.postimg.cc/nVWtWPVL/Screenshot-2025-06-12-160550.png',
     imageAiHint: 'freelance platform',
     liveDemoUrl: '#',
     category: 'React'
