@@ -105,7 +105,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'A modern, responsive website for a fictional web development agency, showcasing services and portfolio.',
     imageUrl: 'https://i.postimg.cc/yY9YyHhK/Screenshot-2025-06-12-160745.png',
     imageAiHint: 'agency website',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://codecrafter-three.vercel.app/',
     category: 'React'
   },
   {
@@ -183,3 +183,4 @@ export const PROJECTS_DATA: Project[] = [
 ];
 
 export const PROJECT_CATEGORIES = ['All', ...Array.from(new Set(PROJECTS_DATA.map(p => p.category)))];
+
