@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -45,7 +46,7 @@ export function Navbar() {
             height={40}
             className="rounded-full"
           />
-          <span className="font-semibold text-lg">{PROFILE_DETAILS.name}</span>
+          <span className="font-semibold text-lg">Krishna Mehta</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
