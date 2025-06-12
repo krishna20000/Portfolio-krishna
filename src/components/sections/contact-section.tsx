@@ -1,6 +1,7 @@
+
 "use client";
 
-import { useState } from "react"; // Added import
+import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -45,7 +46,7 @@ export function ContactSection() {
         },
         body: JSON.stringify({
           ...data,
-          _captcha: "false", // Disable CAPTCHA as requested
+          _captcha: "false", 
         })
       });
 
@@ -127,11 +128,8 @@ export function ContactSection() {
                       </FormItem>
                     )}
                   />
-                  {/* Hidden fields for FormSubmit.co */}
                   <input type="hidden" name="_captcha" value="false" />
-                  {/* Optional: redirect to a thank you page */}
-                  {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" /> */}
-
+                  
                   <Button type="submit" className="w-full" disabled={isSubmitting}>
                     {isSubmitting ? (
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
