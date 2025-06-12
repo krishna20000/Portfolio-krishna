@@ -114,7 +114,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'A clone of the popular video-sharing platform, implementing core features like video playback and search.',
     imageUrl: 'https://portfolio-kdm.vercel.app/yt.png',
     imageAiHint: 'video platform',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://youtube-responsive-eosin.vercel.app/',
     category: 'Clone'
   },
   {
