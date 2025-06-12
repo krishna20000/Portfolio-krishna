@@ -1,8 +1,24 @@
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Briefcase } from "lucide-react";
 import { WORK_EXPERIENCE_DATA } from "@/lib/data";
+import type { WorkExperience } from "@/lib/types";
+
+// Helper function to parse the period string and get the start date
+const getStartDate = (period: string): Date => {
+  const startDateStr = period.split(' – ')[0]; // e.g., "Apr 2025"
+  // Convert "Month Year" to a format Date constructor can parse, like "Month 1, Year"
+  return new Date(`${startDateStr.replace(' ', ' 1, ')}`);
+};
 
 export function WorkExperienceSection() {
+  // Sort experiences: latest first
+  const sortedExperience = [...WORK_EXPERIENCE_DATA].sort((a, b) => {
+    const dateA = getStartDate(a.period);
+    const dateB = getStartDate(b.period);
+    return dateB.getTime() - dateA.getTime(); // Sort in descending order
+  });
+
   return (
     <section id="experience" className="section-min-height py-16 md:py-24">
       <div className="container px-4 md:px-6">
@@ -13,8 +29,11 @@ export function WorkExperienceSection() {
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
-          {WORK_EXPERIENCE_DATA.map((exp, index) => (
-            <Card key={index} className="shadow-lg border border-border transition-shadow hover:shadow-xl">
+          {sortedExperience.map((exp, index) => (
+            <Card 
+              key={index} 
+              className="shadow-lg border border-border transition-shadow hover:shadow-xl mb-8"
+            >
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
                   <Briefcase className="h-8 w-8 text-accent" />
