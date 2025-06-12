@@ -103,7 +103,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '2',
     title: 'Agency Website (CodeCrafter Web)',
     description: 'A modern, responsive website for a fictional web development agency, showcasing services and portfolio.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.postimg.cc/yY9YyHhK/Screenshot-2025-06-12-160745.png',
     imageAiHint: 'agency website',
     liveDemoUrl: '#',
     category: 'React'
