@@ -139,7 +139,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '6',
     title: 'Wikipedia Clone',
     description: 'A simplified version of Wikipedia, focusing on article display and search functionality.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://portfolio-kdm.vercel.app/wiki.png',
     imageAiHint: 'wiki encyclopedia',
     liveDemoUrl: '#',
     category: 'Clone'
