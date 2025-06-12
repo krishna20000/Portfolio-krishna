@@ -111,7 +111,6 @@ body {
 .typewriter-text {
   overflow: hidden;
   white-space: nowrap;
-  /* The JavaScript Typewriter component handles text reveal. CSS only handles caret. */
   /* border-right-width and border-right-style are applied by Tailwind's border-r-2 on the span. */
   /* Initial border-right-color is applied by Tailwind's border-transparent on the span. */
   animation: blink-caret .75s step-end infinite;
@@ -122,22 +121,28 @@ body {
   50% { border-right-color: hsl(var(--accent)) }
 }
 
-/* Heartbeat Glow Effect */
-@keyframes glowing {
-  0% { /* Resting state - very subtle or off */
-    box-shadow: 0 0 0px 0px hsla(var(--accent), 0);
+/* Pulsating Glow Effect */
+@keyframes glowing-pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px 2px hsla(var(--accent), 0.4),
+                0 0 10px 3px hsla(var(--accent), 0.2);
   }
-  50% { /* Pumping state - much more intense and larger with spread */
-    box-shadow: 0 0 20px 5px hsla(var(--accent), 1),    /* Inner bright glow with spread */
-                0 0 40px 10px hsla(var(--accent), 0.7), /* Medium glow with more spread */
-                0 0 65px 15px hsla(var(--accent), 0.5); /* Outer soft glow with largest spread */
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px hsla(var(--accent), 0.8),
+                0 0 30px 10px hsla(var(--accent), 0.6),
+                0 0 50px 15px hsla(var(--accent), 0.4);
   }
-  100% { /* Return to resting state */
-    box-shadow: 0 0 0px 0px hsla(var(--accent), 0);
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px 2px hsla(var(--accent), 0.4),
+                0 0 10px 3px hsla(var(--accent), 0.2);
   }
 }
+
 .glowing-btn {
-  animation: glowing 1.5s infinite ease-in-out; 
+  animation: glowing-pulse 1.8s infinite ease-in-out;
 }
 
 /* Scroll-triggered Animations */
