@@ -1,8 +1,9 @@
+
 import type { Skill, Education, Project, ProfileDetails } from './types';
 import { Atom, Briefcase, Code, Cpu, Database, GitBranch, Github, GraduationCap, Home, Layers, Mail, MessageSquare, Send, Server, Share2, ShoppingBag, User, Youtube } from 'lucide-react';
 
 export const PROFILE_DETAILS: ProfileDetails = {
-  name: 'Krishna Mehta',
+  name: 'Krishna Dharmendra Mehta',
   title: 'Frontend Developer',
   logoUrl: 'https://i.postimg.cc/656dTRxh/circle-transparent.png',
   resumeUrl: 'https://drive.google.com/file/d/1SPE9VhQ9E_IJ62lA3Gjy1vDJeJIzdsaU/view?usp=sharing',
@@ -11,7 +12,7 @@ export const PROFILE_DETAILS: ProfileDetails = {
   twitterUrl: 'https://x.com/Krishna84572328',
   email: 'developerkdm8@gmail.com',
   heroTexts: [
-    "Hi, I'm Krishna Mehta",
+    "Hi, I'm Krishna Dharmendra Mehta",
     "Frontend Developer",
     "React Enthusiast",
     "Problem Solver"
@@ -42,7 +43,7 @@ export const SKILLS_DATA: Skill[] = [
   { name: 'Tailwind CSS', icon: Layers },
   { name: 'Git', icon: GitBranch },
   { name: 'GitHub', icon: Github },
-  { name: 'React.js', icon: Atom }, // Using Atom for React.js
+  { name: 'React.js', icon: Atom },
   { name: 'Express.js', icon: Server },
   { name: 'Node.js', icon: Cpu },
   { name: 'Postman', icon: Send },

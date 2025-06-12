@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
@@ -6,8 +7,8 @@ import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'KDM Portfolio - Krishna Mehta',
-  description: 'Personal portfolio of Krishna Mehta, a frontend developer.',
+  title: 'KDM Portfolio - Krishna Dharmendra Mehta',
+  description: 'Personal portfolio of Krishna Dharmendra Mehta, a frontend developer.',
 };
 
 export default function RootLayout({
