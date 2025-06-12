@@ -76,6 +76,7 @@ export const WORK_EXPERIENCE_DATA: WorkExperience[] = [
   {
     title: 'Software Developer Trainee',
     company: 'AccioJob',
+    companyUrl: 'https://www.linkedin.com/school/acciojob/posts/?feedView=all',
     period: 'Oct 2024 – Mar 2025',
     description: 'Intensive training program focusing on MERN stack development, Data Structures & Algorithms, and real-world project building. Gained hands-on experience in frontend and backend technologies.'
   },
