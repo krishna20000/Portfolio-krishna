@@ -127,14 +127,15 @@ body {
 
 /* Heartbeat Glow Effect */
 @keyframes glowing {
-  0%, 100% { /* Resting state - very subtle glow */
-    box-shadow: 0 0 3px hsla(var(--accent), 0.3),
-                0 0 5px hsla(var(--accent), 0.2);
+  0%, 100% { /* Resting state - a noticeable but calm glow */
+    box-shadow: 0 0 5px hsla(var(--accent), 0.6),
+                0 0 10px hsla(var(--accent), 0.4),
+                0 0 2px 1px hsla(var(--accent), 0.5); /* Subtle inner spread */
   }
-  50% { /* Pumping state - much more intense and larger */
-    box-shadow: 0 0 15px hsla(var(--accent), 1), 
-                0 0 30px hsla(var(--accent), 0.8), 
-                0 0 50px hsla(var(--accent), 0.6);
+  50% { /* Pumping state - much more intense and larger with spread */
+    box-shadow: 0 0 20px 5px hsla(var(--accent), 1),    /* Inner bright glow with spread */
+                0 0 40px 10px hsla(var(--accent), 0.7), /* Medium glow with more spread */
+                0 0 65px 15px hsla(var(--accent), 0.5); /* Outer soft glow with largest spread */
   }
 }
 .glowing-btn {
@@ -186,3 +187,4 @@ body {
 .section-min-height {
   min-height: calc(100vh - 80px - 80px); /* screen - navbar - footer */
 }
+
