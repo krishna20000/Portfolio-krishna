@@ -96,7 +96,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'A full-stack platform connecting freelancers with clients, featuring project posting, bidding, and user profiles.',
     imageUrl: 'https://i.postimg.cc/nVWtWPVL/Screenshot-2025-06-12-160550.png',
     imageAiHint: 'freelance platform',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://codecrafter-tech.vercel.app/',
     category: 'React'
   },
   {
