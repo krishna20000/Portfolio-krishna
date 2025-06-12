@@ -150,7 +150,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'A responsive website for a food delivery service, showcasing menu items and order features.',
     imageUrl: 'https://portfolio-kdm.vercel.app/food.png',
     imageAiHint: 'food delivery',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://foodmunchkdm.ccbp.tech/',
     category: 'JavaScript'
   },
   {
