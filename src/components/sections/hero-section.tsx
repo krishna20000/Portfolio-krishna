@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Download, Eye } from "lucide-react";
+import { Download, Send } from "lucide-react"; // Changed Eye to Send
 import { PROFILE_DETAILS } from "@/lib/data";
 import { Typewriter } from "@/components/ui/typewriter";
 import { ScrollAnimationWrapper } from "@/components/scroll-animation-wrapper";
@@ -25,9 +25,9 @@ export function HeroSection() {
             </p>
             <div className="flex flex-col gap-4 sm:flex-row justify-center">
               <Button asChild size="lg" className="glowing-btn">
-                <Link href="#projects">
-                  <Eye className="mr-2 h-5 w-5" />
-                  View My Work
+                <Link href={`mailto:${PROFILE_DETAILS.email}`}>
+                  <Send className="mr-2 h-5 w-5" />
+                  Hire Me
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
