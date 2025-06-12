@@ -148,7 +148,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '7',
     title: 'Food Munch',
     description: 'A responsive website for a food delivery service, showcasing menu items and order features.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://portfolio-kdm.vercel.app/food.png',
     imageAiHint: 'food delivery',
     liveDemoUrl: '#',
     category: 'JavaScript'
