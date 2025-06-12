@@ -166,7 +166,7 @@ export const PROJECTS_DATA: Project[] = [
     id: '9',
     title: 'Blinkit UI Clone',
     description: 'A UI clone of the Blinkit (formerly Grofers) application, focusing on frontend design and layout.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNOCmrNUfplxm1Kp_SsFSTgb_SLZzV4qeNSg&s',
     imageAiHint: 'ecommerce ui',
     liveDemoUrl: '#',
     category: 'Clone'
@@ -183,4 +183,3 @@ export const PROJECTS_DATA: Project[] = [
 ];
 
 export const PROJECT_CATEGORIES = ['All', ...Array.from(new Set(PROJECTS_DATA.map(p => p.category)))];
-
