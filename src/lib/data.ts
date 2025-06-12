@@ -123,7 +123,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'A web-based spreadsheet application mimicking functionalities of Google Sheets.',
     imageUrl: 'https://portfolio-kdm.vercel.app/sheets.png',
     imageAiHint: 'spreadsheet app',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://google-sheet-chi.vercel.app/',
     category: 'JavaScript'
   },
   {
