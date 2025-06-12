@@ -141,7 +141,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'A simplified version of Wikipedia, focusing on article display and search functionality.',
     imageUrl: 'https://portfolio-kdm.vercel.app/wiki.png',
     imageAiHint: 'wiki encyclopedia',
-    liveDemoUrl: '#',
+    liveDemoUrl: 'https://wikipedia-kdm.vercel.app/',
     category: 'Clone'
   },
   {
