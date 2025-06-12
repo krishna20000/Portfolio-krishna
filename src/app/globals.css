@@ -125,21 +125,20 @@ body {
   50% { border-color: hsl(var(--accent)) }
 }
 
-/* Refined Button Glow */
+/* Heartbeat Glow Effect */
 @keyframes glowing {
-  0%, 100% {
-    box-shadow: 0 0 6px hsla(var(--accent), 0.7), 
-                0 0 12px hsla(var(--accent), 0.5),
-                0 0 18px hsla(var(--accent), 0.3);
+  0%, 100% { /* Resting state */
+    box-shadow: 0 0 4px hsla(var(--accent), 0.5),
+                0 0 8px hsla(var(--accent), 0.3);
   }
-  50% {
-    box-shadow: 0 0 12px hsla(var(--accent), 1), 
+  50% { /* Pumping state - more intense */
+    box-shadow: 0 0 12px hsla(var(--accent), 0.9), 
                 0 0 24px hsla(var(--accent), 0.7), 
                 0 0 36px hsla(var(--accent), 0.5);
   }
 }
 .glowing-btn {
-  animation: glowing 2.5s infinite ease-in-out;
+  animation: glowing 1.5s infinite ease-in-out; /* Faster, more rhythmic pulse */
 }
 
 /* Scroll-triggered Animations */
