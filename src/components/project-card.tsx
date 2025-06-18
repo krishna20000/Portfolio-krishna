@@ -17,10 +17,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <Image
           src={project.imageUrl}
           alt={project.title}
-          layout="fill"
-          objectFit="cover"
-          className="group-hover:scale-105 transition-transform duration-500"
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
           data-ai-hint={project.imageAiHint}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Optional: provide sizes for better performance with fill
         />
       </CardHeader>
       <CardContent className="p-6 flex-grow">
