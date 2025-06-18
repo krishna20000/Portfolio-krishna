@@ -28,9 +28,9 @@ export const PROFILE_DETAILS: ProfileDetails = {
 export const NAV_LINKS = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Experience' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
-  { href: '#experience', label: 'Experience' },
   { href: '#education', label: 'Education' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -60,8 +60,8 @@ export const EDUCATION_DATA: Education[] = [
   },
   {
     degree: 'Bachelor of Computer Applications (BCA)',
-    institution: 'Parul University',
-    period: '2021 - 2024',
+    institution: 'Parul University, Vadodara',
+    period: '2022 - 2025',
     description: 'Focused on core computer science concepts, software development, and application design.'
   },
   {
