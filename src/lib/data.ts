@@ -65,10 +65,10 @@ export const EDUCATION_DATA: Education[] = [
     description: 'Focused on core computer science concepts, software development, and application design. Gained a strong foundation in programming, database management, and web technologies.'
   },
   {
-    degree: 'Higher Secondary Education (Commerce)',
+    degree: 'Higher Secondary Education (Science)',
     institution: 'T.P Bhatia College of Science',
     period: '2019 - 2021',
-    description: 'Completed higher secondary education with a focus on commerce subjects.'
+    description: 'Completed higher secondary education with a focus on science subjects.'
   },
   {
     degree: 'Secondary School Certificate (10th Grade)',
