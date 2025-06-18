@@ -62,7 +62,7 @@ export const EDUCATION_DATA: Education[] = [
     degree: 'Bachelor of Computer Applications (BCA)',
     institution: 'Parul University, Vadodara',
     period: '2022 - 2025',
-    description: 'Focused on core computer science concepts, software development, and application design.'
+    description: 'Focused on core computer science concepts, software development, and application design. Gained a strong foundation in programming, database management, and web technologies.'
   },
   {
     degree: 'Higher Secondary Education (Commerce)',
@@ -189,3 +189,4 @@ export const PROJECTS_DATA: Project[] = [
 ];
 
 export const PROJECT_CATEGORIES = ['All', ...Array.from(new Set(PROJECTS_DATA.map(p => p.category)))];
+
