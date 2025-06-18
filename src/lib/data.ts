@@ -74,7 +74,7 @@ export const EDUCATION_DATA: Education[] = [
     degree: 'Secondary School Certificate (10th Grade)',
     institution: 'Sardar Vallabhai Patel Vidhyalaya, Mumbai',
     period: 'Completed 2020',
-    description: 'Successfully completed secondary school education.'
+    description: 'Successfully completed secondary school education with a strong academic foundation. Equipped with essential skills to pursue higher education and professional development.'
   },
 ];
 
