@@ -55,7 +55,7 @@ export const EDUCATION_DATA: Education[] = [
   {
     degree: 'Master of Computer Applications (MCA)',
     institution: 'Jain University, Bangalore',
-    period: 'Pursuing (Expected Graduation Year)', // You might want to update 'Expected Graduation Year'
+    period: 'Pursuing (Expected 2027)',
     description: 'Currently pursuing a Master\'s degree to deepen expertise in advanced computer science topics, software engineering principles, and specialized application development.'
   },
   {
