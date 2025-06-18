@@ -68,13 +68,13 @@ export const EDUCATION_DATA: Education[] = [
     degree: 'Higher Secondary Education (Science)',
     institution: 'T.P Bhatia College of Science, Mumbai',
     period: '2020 - 2022',
-    description: 'Completed higher secondary education with a focus on science subjects.'
+    description: 'Completed higher secondary education with a focus on science stream subjects.\nGained a strong foundation in Physics, Chemistry, and Mathematics.'
   },
   {
     degree: 'Secondary School Certificate (10th Grade)',
     institution: 'Sardar Vallabhai Patel Vidhyalaya, Mumbai',
     period: 'Completed 2020',
-    description: 'Successfully completed secondary school education with a strong academic foundation. Equipped with essential skills to pursue higher education and professional development.'
+    description: 'Successfully completed secondary school education with a strong academic foundation.\nEquipped with essential skills to pursue higher education and professional development.'
   },
 ];
 
