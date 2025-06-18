@@ -21,16 +21,16 @@ export function HeroSection() {
         left: `${Math.random() * 100}%`,
         animationDuration: `${Math.random() * 5 + 5}s`, // Duration: 5s to 10s
         animationDelay: `${Math.random() * 7}s`, // Delay: 0s to 7s
-        // Optional: Vary dot size slightly
-        // width: `${Math.floor(Math.random() * 2) + 2}px`, // 2px or 3px
-        // height: `${Math.floor(Math.random() * 2) + 2}px`,
       } as CSSProperties,
     }));
     setDots(generatedDots);
   }, []);
 
   return (
-    <section id="home" className="relative section-min-height flex items-center justify-center py-16 md:py-24 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
+    <section 
+      id="home" 
+      className="relative section-min-height flex items-center justify-center py-16 md:py-24 hero-animated-gradient overflow-hidden"
+    >
       {/* Container for falling dots */}
       <div className="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
         {dots.map(dot => (
@@ -42,7 +42,7 @@ export function HeroSection() {
         ))}
       </div>
 
-      <div className="container px-4 md:px-6 relative z-10"> {/* Ensure content is above dots */}
+      <div className="container px-4 md:px-6 relative z-10"> {/* Ensure content is above dots and gradient */}
         <ScrollAnimationWrapper
           animationClassName="animate-fadeInUp"
           className="flex flex-col items-center text-center"
