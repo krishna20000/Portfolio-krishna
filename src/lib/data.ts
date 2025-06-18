@@ -67,7 +67,7 @@ export const EDUCATION_DATA: Education[] = [
   {
     degree: 'Higher Secondary Education (Science)',
     institution: 'T.P Bhatia College of Science',
-    period: '2019 - 2021',
+    period: '2020 - 2022',
     description: 'Completed higher secondary education with a focus on science subjects.'
   },
   {
