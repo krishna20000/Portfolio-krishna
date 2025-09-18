@@ -86,7 +86,8 @@ export const WORK_EXPERIENCE_DATA: WorkExperience[] = [
     company: 'Whatbytes',
     companyUrl: 'https://whatbytes.com/',
     period: 'Sep 2024 – Present',
-    description: 'Working with modern web technologies like React and Next.js to build and maintain responsive and performant user interfaces.'
+    description: 'Working with modern web technologies like React and Next.js to build and maintain responsive and performant user interfaces.',
+    companyLogoUrl: 'https://i.postimg.cc/pLG8NPF0/Screenshot-2025-09-18-154701.png'
   },
   {
     title: 'Software Developer Trainee',
