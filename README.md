@@ -45,6 +45,6 @@ npm run dev
 ```
 
 - **Name:** Krishna Mehta  
-- **Portfolio:** [portfolio-kdm.vercel.app](https://portfolio-kdm.vercel.app)  
+- **Portfolio:** [https://portfolio-krishna-one.com](https://portfolio-krishna-one.vercel.app/)
 - **LinkedIn:** [linkedin.com/in/krishnamehta](https://www.linkedin.com/in/kdmehta704/)  
 - **GitHub:** [github.com/krishna20000](https://github.com/krishna20000)
