@@ -1,5 +1,5 @@
 
-import type { Skill, Education, Project, ProfileDetails, WorkExperience } from './types';
+import type { Skill, Education, Project, ProfileDetails, WorkExperience, Certificate } from './types';
 import { Atom, Briefcase, Code, Cpu, Database, GitBranch, Github, GraduationCap, Home, Layers, Mail, MessageSquare, Send, Server, Share2, ShoppingBag, User, Youtube } from 'lucide-react';
 
 export const PROFILE_DETAILS: ProfileDetails = {
@@ -69,13 +69,13 @@ export const EDUCATION_DATA: Education[] = [
     degree: 'Higher Secondary Education (Science)',
     institution: 'T.P Bhatia College of Science, Mumbai',
     period: '2020 - 2022',
-    description: 'Completed higher secondary education with a focus on science stream subjects.\nGained a strong foundation in Physics, Chemistry, and Mathematics.'
+    description: "Completed higher secondary education with a focus on science stream subjects.\nGained a strong foundation in Physics, Chemistry, and Mathematics."
   },
   {
     degree: 'Secondary School Certificate (10th Grade)',
     institution: 'Sardar Vallabhai Patel Vidhyalaya, Mumbai',
     period: 'Completed 2020',
-    description: 'Successfully completed secondary school education with a strong academic foundation.\nEquipped with essential skills to pursue higher education and professional development.'
+    description: "Successfully completed secondary school education with a strong academic foundation.\nEquipped with essential skills to pursue higher education and professional development."
   },
 ];
 
@@ -93,6 +93,30 @@ export const WORK_EXPERIENCE_DATA: WorkExperience[] = [
     companyUrl: 'https://www.linkedin.com/company/devfrendcom/posts/?feedView=all',
     period: 'Apr 2025 – Jun 2025',
     description: 'Contributed to frontend development projects using modern web technologies. My work focused on creating and enhancing client websites, applying modern development techniques.'
+  }
+];
+
+export const CERTIFICATIONS_DATA: Certificate[] = [
+  {
+    name: 'Placeholder Certificate 1',
+    issuer: 'Placeholder Issuer',
+    imageUrl: 'https://placehold.co/600x400/0f172a/94a3b8?text=Certificate',
+    linkUrl: '#',
+    imageAiHint: 'certificate placeholder'
+  },
+  {
+    name: 'Placeholder Certificate 2',
+    issuer: 'Placeholder Issuer',
+    imageUrl: 'https://placehold.co/600x400/1e3a8a/e0e7ff?text=Certificate',
+    linkUrl: '#',
+    imageAiHint: 'award placeholder'
+  },
+  {
+    name: 'Placeholder Certificate 3',
+    issuer: 'Placeholder Issuer',
+    imageUrl: 'https://placehold.co/600x400/7c3aed/f3e8ff?text=Certificate',
+    linkUrl: '#',
+    imageAiHint: 'document placeholder'
   }
 ];
 

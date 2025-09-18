@@ -48,3 +48,11 @@ export interface NavLink {
   href: string;
   label: string;
 }
+
+export interface Certificate {
+  name: string;
+  issuer: string;
+  imageUrl: string;
+  linkUrl: string;
+  imageAiHint: string;
+}

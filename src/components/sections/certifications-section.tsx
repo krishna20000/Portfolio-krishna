@@ -1,7 +1,8 @@
 
 import { ScrollAnimationWrapper } from "@/components/scroll-animation-wrapper";
 import { CredlyBadge } from "@/components/credly-badge";
-import { Award } from "lucide-react";
+import { CERTIFICATIONS_DATA } from "@/lib/data";
+import { CertificateCard } from "@/components/certificate-card";
 
 export function CertificationsSection() {
   return (
@@ -17,8 +18,27 @@ export function CertificationsSection() {
             </p>
           </ScrollAnimationWrapper>
         </div>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {CERTIFICATIONS_DATA.map((certificate, index) => (
+            <ScrollAnimationWrapper 
+              key={index} 
+              animationDelay={`${200 + index * 100}ms`}
+            >
+              <CertificateCard certificate={certificate} />
+            </ScrollAnimationWrapper>
+          ))}
+        </div>
+
+        <div className="text-center my-12">
+          <ScrollAnimationWrapper animationDelay="500ms">
+            <h3 className="font-headline text-2xl font-bold">Digital Badges</h3>
+            <p className="mt-2 text-muted-foreground">Official badges from verified platforms.</p>
+          </ScrollAnimationWrapper>
+        </div>
+
         <ScrollAnimationWrapper 
-          animationDelay="200ms" 
+          animationDelay="600ms" 
           className="flex justify-center"
         >
           <CredlyBadge />
