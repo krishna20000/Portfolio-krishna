@@ -101,7 +101,8 @@ export const WORK_EXPERIENCE_DATA: WorkExperience[] = [
     company: 'Devfrend Web Solutions',
     companyUrl: 'https://devfrend.in/',
     period: 'Apr 2024 – Jun 2024',
-    description: 'Contributed to frontend development projects using modern web technologies. My work focused on creating and enhancing client websites, applying modern development techniques.'
+    description: 'Contributed to frontend development projects using modern web technologies. My work focused on creating and enhancing client websites, applying modern development techniques.',
+    companyLogoUrl: 'https://i.postimg.cc/Hxj6GSnM/Screenshot-2025-09-18-154537.png'
   }
 ];
 
