@@ -98,25 +98,25 @@ export const WORK_EXPERIENCE_DATA: WorkExperience[] = [
 
 export const CERTIFICATIONS_DATA: Certificate[] = [
   {
-    name: 'Placeholder Certificate 1',
-    issuer: 'Placeholder Issuer',
-    imageUrl: 'https://placehold.co/600x400/0f172a/94a3b8?text=Certificate',
-    linkUrl: '#',
-    imageAiHint: 'certificate placeholder'
+    name: 'Build your own static website',
+    issuer: 'NXTWAVE',
+    imageUrl: '/certificates/Static.png',
+    linkUrl: 'https://certificates.ccbp.in/academy/static-website?id=UMNAHCVFZK',
+    imageAiHint: 'static website'
   },
   {
-    name: 'Placeholder Certificate 2',
-    issuer: 'Placeholder Issuer',
-    imageUrl: 'https://placehold.co/600x400/1e3a8a/e0e7ff?text=Certificate',
-    linkUrl: '#',
-    imageAiHint: 'award placeholder'
+    name: 'Build your own responsive website',
+    issuer: 'NXTWAVE',
+    imageUrl: '/certificates/Responsive.png',
+    linkUrl: 'https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=EGLQTLCCVB',
+    imageAiHint: 'responsive website'
   },
   {
-    name: 'Placeholder Certificate 3',
-    issuer: 'Placeholder Issuer',
-    imageUrl: 'https://placehold.co/600x400/7c3aed/f3e8ff?text=Certificate',
-    linkUrl: '#',
-    imageAiHint: 'document placeholder'
+    name: 'Introduction to databases',
+    issuer: 'NXTWAVE',
+    imageUrl: '/certificates/Intro to databases.png',
+    linkUrl: 'https://certificates.ccbp.in/academy/introduction-to-databases?id=PQDDSJCCGC',
+    imageAiHint: 'Introduction to databases'
   }
 ];
 
