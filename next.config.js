@@ -36,6 +36,11 @@ const nextConfig = {
       }
     ],
   },
+  experimental: {
+    scripting: {
+      remoteDomains: ['cdn.credly.com'],
+    },
+  },
 };
 
 module.exports = nextConfig;
