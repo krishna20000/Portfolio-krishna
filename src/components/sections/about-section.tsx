@@ -1,9 +1,10 @@
 
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle } from "lucide-react";
+import { Check } from "lucide-react";
 import { PROFILE_DETAILS } from "@/lib/data";
 import { ScrollAnimationWrapper } from "@/components/scroll-animation-wrapper";
+import { CredlyBadge } from "@/components/credly-badge";
 
 export function AboutSection() {
   return (
@@ -44,7 +45,7 @@ export function AboutSection() {
                 <ul className="space-y-2">
                   {PROFILE_DETAILS.about.map((item, index) => (
                     <li key={index} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-accent mr-2 mt-1 shrink-0" />
+                      <Check className="h-5 w-5 text-accent mr-2 mt-1 shrink-0" />
                       <span className="text-muted-foreground">{item}</span>
                     </li>
                   ))}

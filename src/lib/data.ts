@@ -70,7 +70,7 @@ export const EDUCATION_DATA: Education[] = [
     degree: 'Higher Secondary Education (Science)',
     institution: 'T.P Bhatia College of Science, Mumbai',
     period: '2020 - 2022',
-    description: "Completed higher secondary education with a focus on science stream subjects.\nGained a strong foundation in Physics, Chemistry, and Mathematics."
+    description: "Completed higher secondary education with a focus on science stream subjects. Gained a strong foundation in Physics, Chemistry, and Mathematics."
   },
   {
     degree: 'Secondary School Certificate (10th Grade)',
@@ -82,17 +82,24 @@ export const EDUCATION_DATA: Education[] = [
 
 export const WORK_EXPERIENCE_DATA: WorkExperience[] = [
   {
+    title: 'Frontend Developer',
+    company: 'Whatbytes',
+    companyUrl: 'https://whatbytes.com/',
+    period: 'Sep 2024 – Present',
+    description: 'Working with modern web technologies like React and Next.js to build and maintain responsive and performant user interfaces.'
+  },
+  {
     title: 'Software Developer Trainee',
     company: 'AccioJob',
     companyUrl: 'https://www.linkedin.com/school/acciojob/posts/?feedView=all',
-    period: 'Oct 2024 – Mar 2025',
+    period: 'Oct 2023 – Mar 2024',
     description: 'Intensive training program focusing on MERN stack development, Data Structures & Algorithms, and real-world project building. Gained hands-on experience in frontend and backend technologies.'
   },
   {
     title: 'Junior Frontend Developer',
     company: 'Devfrend Web Solutions',
     companyUrl: 'https://www.linkedin.com/company/devfrendcom/posts/?feedView=all',
-    period: 'Apr 2025 – Jun 2025',
+    period: 'Apr 2024 – Jun 2024',
     description: 'Contributed to frontend development projects using modern web technologies. My work focused on creating and enhancing client websites, applying modern development techniques.'
   }
 ];
@@ -101,23 +108,23 @@ export const CERTIFICATIONS_DATA: Certificate[] = [
   {
     name: 'Build your own static website',
     issuer: 'NXTWAVE',
-    imageUrl: '/certificates/Static.png',
+    imageUrl: 'https://picsum.photos/seed/cert1/600/400',
     linkUrl: 'https://certificates.ccbp.in/academy/static-website?id=UMNAHCVFZK',
     imageAiHint: 'static website'
   },
   {
     name: 'Build your own responsive website',
     issuer: 'NXTWAVE',
-    imageUrl: '/certificates/Responsive.png',
+    imageUrl: 'https://picsum.photos/seed/cert2/600/400',
     linkUrl: 'https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=EGLQTLCCVB',
     imageAiHint: 'responsive website'
   },
   {
     name: 'Introduction to databases',
     issuer: 'NXTWAVE',
-    imageUrl: '/certificates/Intro to databases.png',
+    imageUrl: 'https://picsum.photos/seed/cert3/600/400',
     linkUrl: 'https://certificates.ccbp.in/academy/introduction-to-databases?id=PQDDSJCCGC',
-    imageAiHint: 'Introduction to databases'
+    imageAiHint: 'database introduction'
   }
 ];
 

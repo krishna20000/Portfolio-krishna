@@ -5,18 +5,29 @@ import { WORK_EXPERIENCE_DATA } from "@/lib/data";
 import Link from "next/link";
 import { ScrollAnimationWrapper } from "@/components/scroll-animation-wrapper";
 
-// Helper function to parse the period string and get the start date
-const getStartDate = (period: string): Date => {
-  const startDateStr = period.split(' – ')[0]; // e.g., "Apr 2025"
+// Helper function to parse the period string and get a comparable value
+const getSortableDate = (period: string): Date => {
+  const startDateStr = period.split(' – ')[0]; // e.g., "Apr 2025" or "Present"
+  
+  if (startDateStr.toLowerCase() === 'present') {
+    return new Date(); // Use current date for "Present"
+  }
   // Convert "Month Year" to a format Date constructor can parse, like "Month 1, Year"
   return new Date(`${startDateStr.replace(' ', ' 1, ')}`);
 };
 
 export function WorkExperienceSection() {
-  // Sort experiences: latest first
+  // Sort experiences: latest first, with "Present" always at the top
   const sortedExperience = [...WORK_EXPERIENCE_DATA].sort((a, b) => {
-    const dateA = getStartDate(a.period);
-    const dateB = getStartDate(b.period);
+    const isAPresent = a.period.includes('Present');
+    const isBPresent = b.period.includes('Present');
+
+    if (isAPresent && !isBPresent) return -1;
+    if (!isAPresent && isBPresent) return 1;
+
+    const dateA = getSortableDate(a.period);
+    const dateB = getSortableDate(b.period);
+    
     return dateB.getTime() - dateA.getTime(); // Sort in descending order
   });
 
