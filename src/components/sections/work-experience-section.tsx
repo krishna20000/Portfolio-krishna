@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Briefcase } from "lucide-react";
 import { WORK_EXPERIENCE_DATA } from "@/lib/data";
 import Link from "next/link";
+import Image from "next/image";
 import { ScrollAnimationWrapper } from "@/components/scroll-animation-wrapper";
 
 // Helper function to parse the period string and get a comparable value
@@ -56,7 +57,17 @@ export function WorkExperienceSection() {
               >
                 <CardHeader>
                   <div className="flex items-center gap-4 mb-2">
-                    <Briefcase className="h-8 w-8 text-accent" />
+                    {exp.companyLogoUrl ? (
+                      <Image
+                        src={exp.companyLogoUrl}
+                        alt={`${exp.company} logo`}
+                        width={40}
+                        height={40}
+                        className="rounded-full object-contain"
+                      />
+                    ) : (
+                      <Briefcase className="h-8 w-8 text-accent" />
+                    )}
                     <div>
                       <CardTitle className="font-headline text-xl">{exp.title}</CardTitle>
                       {exp.companyUrl ? (

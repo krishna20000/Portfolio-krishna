@@ -30,6 +30,7 @@ export interface WorkExperience {
   title: string;
   company: string;
   companyUrl?: string;
+  companyLogoUrl?: string;
   period: string;
   description: string;
 }

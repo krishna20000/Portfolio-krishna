@@ -91,14 +91,15 @@ export const WORK_EXPERIENCE_DATA: WorkExperience[] = [
   {
     title: 'Software Developer Trainee',
     company: 'AccioJob',
-    companyUrl: 'https://www.linkedin.com/school/acciojob/posts/?feedView=all',
+    companyUrl: 'https://acciojob.com/',
     period: 'Oct 2023 – Mar 2024',
-    description: 'Intensive training program focusing on MERN stack development, Data Structures & Algorithms, and real-world project building. Gained hands-on experience in frontend and backend technologies.'
+    description: 'Intensive training program focusing on MERN stack development, Data Structures & Algorithms, and real-world project building. Gained hands-on experience in frontend and backend technologies.',
+    companyLogoUrl: 'https://i.postimg.cc/s2m2FxWq/Screenshot-2025-09-18-154119.png'
   },
   {
     title: 'Junior Frontend Developer',
     company: 'Devfrend Web Solutions',
-    companyUrl: 'https://www.linkedin.com/company/devfrendcom/posts/?feedView=all',
+    companyUrl: 'https://devfrend.in/',
     period: 'Apr 2024 – Jun 2024',
     description: 'Contributed to frontend development projects using modern web technologies. My work focused on creating and enhancing client websites, applying modern development techniques.'
   }
