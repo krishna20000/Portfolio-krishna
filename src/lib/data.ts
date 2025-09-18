@@ -111,21 +111,21 @@ export const CERTIFICATIONS_DATA: Certificate[] = [
   {
     name: 'Build your own static website',
     issuer: 'NXTWAVE',
-    imageUrl: 'https://picsum.photos/seed/cert1/600/400',
+    imageUrl: '/certificates/Static.png',
     linkUrl: 'https://certificates.ccbp.in/academy/static-website?id=UMNAHCVFZK',
     imageAiHint: 'static website'
   },
   {
     name: 'Build your own responsive website',
     issuer: 'NXTWAVE',
-    imageUrl: 'https://picsum.photos/seed/cert2/600/400',
+    imageUrl: '/certificates/Responsive.png',
     linkUrl: 'https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=EGLQTLCCVB',
     imageAiHint: 'responsive website'
   },
   {
     name: 'Introduction to databases',
     issuer: 'NXTWAVE',
-    imageUrl: 'https://picsum.photos/seed/cert3/600/400',
+    imageUrl: '/certificates/Databases.png',
     linkUrl: 'https://certificates.ccbp.in/academy/introduction-to-databases?id=PQDDSJCCGC',
     imageAiHint: 'database introduction'
   }
