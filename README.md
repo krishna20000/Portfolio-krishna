@@ -42,15 +42,9 @@ npm install
 # Run development server
 npm run dev
 
+```
 
-
-
-📧 Contact
-
-**- Name: Krishna Mehta **
-
-** - Portfolio: portfolio-kdm.vercel.app **
-
-** - LinkedIn: [linkedin.com/in/krishnamehta](https://www.linkedin.com/in/kdmehta704/) **
-
-** - GitHub: github.com/krishna20000 **
+- **Name:** Krishna Mehta  
+- **Portfolio:** [portfolio-kdm.vercel.app](https://portfolio-kdm.vercel.app)  
+- **LinkedIn:** [linkedin.com/in/krishnamehta](https://www.linkedin.com/in/kdmehta704/)  
+- **GitHub:** [github.com/krishna20000](https://github.com/krishna20000)
