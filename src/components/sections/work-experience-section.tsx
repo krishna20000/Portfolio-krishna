@@ -71,7 +71,7 @@ export function WorkExperienceSection() {
                     <div>
                       <CardTitle className="font-headline text-xl">{exp.title}</CardTitle>
                       {exp.companyUrl ? (
-                        <Link href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-md text-primary hover:underline">
+                        <Link href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-md text-primary">
                           {exp.company}
                         </Link>
                       ) : (
@@ -92,3 +92,4 @@ export function WorkExperienceSection() {
     </section>
   );
 }
+
