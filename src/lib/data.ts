@@ -1,6 +1,6 @@
 
 import type { Skill, Education, Project, ProfileDetails, WorkExperience, Certificate } from './types';
-import { Atom, Briefcase, Code, Cpu, Database, GitBranch, Github, GraduationCap, Home, Layers, Mail, MessageSquare, Send, Server, Share2, ShoppingBag, User, Youtube } from 'lucide-react';
+import { Atom, Briefcase, Code, Cpu, Database, GitBranch, Github, GraduationCap, Home, Layers, Mail, MessageSquare, Send, Server, Share2, ShoppingBag, Sparkles, User, Youtube } from 'lucide-react';
 
 export const PROFILE_DETAILS: ProfileDetails = {
   name: 'Krishna Dharmendra Mehta',
@@ -50,6 +50,7 @@ export const SKILLS_DATA: Skill[] = [
   { name: 'Postman', icon: Send },
   { name: 'Next.js', icon: Code },
   { name: 'Supabase', icon: Database },
+  { name: 'Generative AI', icon: Sparkles },
 ];
 
 export const EDUCATION_DATA: Education[] = [
