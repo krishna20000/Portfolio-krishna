@@ -30,6 +30,7 @@ export const NAV_LINKS = [
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
   { href: '#skills', label: 'Skills' },
+  { href: '#certifications', label: 'Certifications' },
   { href: '#projects', label: 'Projects' },
   { href: '#education', label: 'Education' },
   { href: '#contact', label: 'Contact' },
@@ -189,4 +190,3 @@ export const PROJECTS_DATA: Project[] = [
 ];
 
 export const PROJECT_CATEGORIES = ['All', ...Array.from(new Set(PROJECTS_DATA.map(p => p.category)))];
-

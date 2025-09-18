@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import { PROFILE_DETAILS } from "@/lib/data";
 import { ScrollAnimationWrapper } from "@/components/scroll-animation-wrapper";
-import { CredlyBadge } from "@/components/credly-badge";
 
 export function AboutSection() {
   return (
@@ -22,7 +21,7 @@ export function AboutSection() {
         </div>
 
         <div className="grid gap-10 lg:grid-cols-5 items-start">
-          <ScrollAnimationWrapper animationClassName="animate-fadeIn" animationDelay="200ms" className="lg:col-span-2 flex flex-col items-center gap-8">
+          <ScrollAnimationWrapper animationClassName="animate-fadeIn" animationDelay="200ms" className="lg:col-span-2 flex justify-center">
             <Image
               src={PROFILE_DETAILS.logoUrl} 
               alt={PROFILE_DETAILS.name}
@@ -31,7 +30,6 @@ export function AboutSection() {
               className="rounded-full shadow-xl border-4 border-primary"
               priority
             />
-            <CredlyBadge />
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper animationDelay="300ms" className="lg:col-span-3 space-y-6">
             <Card className="shadow-lg card-hover-effect">

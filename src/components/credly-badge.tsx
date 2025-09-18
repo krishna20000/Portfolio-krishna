@@ -5,7 +5,7 @@ import { Card } from './ui/card';
 
 export function CredlyBadge() {
   return (
-    <Card className="p-4 flex justify-center items-center bg-card/50">
+    <Card className="p-4 flex justify-center items-center bg-card shadow-lg card-hover-effect">
       <div
         data-iframe-width="150"
         data-iframe-height="270"
